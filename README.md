@@ -1,8 +1,6 @@
 # cracking-the-interview-code
 A collection of challenging interview questions focusing on system design, algorithms, and cloud microservices to help you crack any engineering interviews.
-
-# Cracking the Interview Code
-
+---
 Welcome to Cracking the Interview Code! This repository is your ultimate resource for tackling challenging interview questions that focus on system design, algorithms, and cloud microservices. Each question is crafted to push your problem-solving abilities, coding skills, and understanding of intricate system architectures to the next level.
 
 ## Overview
