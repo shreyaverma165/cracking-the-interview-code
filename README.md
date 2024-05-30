@@ -9,11 +9,10 @@ Get ready to dive deep into the kind of questions that separate good developers 
 
 ## Questions
 
-1. [Transaction Analysis for Cloud-Based E-Commerce System](questions/transaction-analysis.md)
-
-## Algorithms Covered
-
-- Three Sum Algorithm
+1. [Transaction Analysis for Cloud-Based E-Commerce System](questions/transaction-unique-triplets.md)
+   Algorithm Covered -- Three Sum Algorithm
+   Difficulty Level -- Intermediate
+   Companies -- Apple, Adobe, Expedia, Google, Dropbox, AMEX
 
 ## Getting Started
 
