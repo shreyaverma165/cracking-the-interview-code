@@ -15,6 +15,10 @@ This repository is your ultimate resource for tackling challenging interview que
    - Detailed Solution: [003-Course-Scheduler](solutions/003-course-scheduler)
 4. [**Sliding Window Rate Limiter**](questions/004-sliding-window-rate-limiter.md) (API Rate Limiting, DifficultyLevel: Intermediate, Hard)
    - Detailed Solution: [004-Sliding-Window-RateLimiter](solutions/004-sliding-window-rate-limiter)
+5. [**Search in a rotated sorted array**](questions/005-Search-Rotated-Sorted-Array.md) (Search & Retreival, DifficultyLevel: Intermediate)
+   - Detailed Solution: [005-Search-Rotated-Sorted-Array](solutions/005-Search-Rotated-Sorted-Array)
+6. [**Longest Substring with & without repetition**](questions/006-Longest-Substring-With-Without-Repetition.md) (Search & Retreival, DifficultyLevel: Intermediate)
+   - Detailed Solution: [006-Longest-Substring-With-Without-Repetition](solutions/006-Longest-Substring-With-Without-Repetition)
 
 ## Getting Started
 
