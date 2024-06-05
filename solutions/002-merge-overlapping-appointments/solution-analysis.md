@@ -1,3 +1,20 @@
+### Data Structure Brainstorm for Merging Overlapping Appointments
+
+| Data Structure | Pros | Cons | Expected Time Complexity | Expected Space Complexity |
+|----------------|------|------|--------------------------|---------------------------|
+| **Array** | Constant-time access to elements | Fixed size, inefficient for dynamic insertion and deletion; requires shifting elements | Sorting: O(n log n) Merging: O(n) Total: O(n log n) | In-place operations: O(1) additional space |
+| **Heap** | Excellent for finding minimum or maximum elements, used in priority queues | Not suitable for maintaining sorted order or sequential access needed for merging intervals | Building heap: O(n) Extracting elements: O(n log n) Merging: O(n) Total: O(n log n) | Heap storage: O(n) |
+| **Graph** | Useful for representing relationships and dependencies | Overcomplicated for this problem; requires additional traversal logic to merge intervals | Building the graph: O(n + e) Traversal: O(n + e) Total: O(n + e) | Graph storage: O(n + e) |
+| **Tree** | Efficient for search, insertion, and deletion | Overhead of maintaining tree balance, unnecessary complexity for merging intervals | Building balanced tree: O(n log n) Insertion and search: O(log n) Merging: O(n) Total: O(n log n) | Tree storage: O(n) |
+| **Dictionary (HashMap)** | Fast lookups | Does not maintain order, which is essential for merging intervals | Insertions: O(n) Lookups: O(1) Merging: O(n) Total: O(n) | HashMap storage: O(n) |
+| **Stack** | Useful for Last-In-First-Out (LIFO) operations | Not ideal for maintaining sorted order, needed for merging intervals | Sorting: O(n log n) Merging: O(n) Total: O(n log n) | Stack storage: O(n) |
+| **Queue** | Useful for First-In-First-Out (FIFO) operations | Not ideal for maintaining sorted order, needed for merging intervals | Sorting: O(n log n) Merging: O(n) Total: O(n log n) | Queue storage: O(n) |
+| **LinkedList (or List)** | Dynamic resizing, efficient for appending and accessing elements, simple to implement | Slightly more overhead due to dynamic resizing but negligible in this context | Sorting: O(n log n) Merging: O(n) Total: O(n log n) | List storage: O(n) |
+
+### Summary
+
+Given the need to sort intervals and then merge them, the LinkedList (or simply a list) stands out as the most appropriate choice due to its simplicity, efficiency, and suitability for sorting and sequential access. Other data structures introduce unnecessary complexity or do not align well with the requirements of this specific problem. 
+
 ### Solution Overview
 
 1. The input list of intervals is sorted based on the start time of each interval. This ensures that intervals are processed in chronological order, making it easier to merge overlapping intervals.
