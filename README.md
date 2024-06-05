@@ -11,6 +11,8 @@ Get ready to dive deep into the kind of questions that separate good developers 
 
 1. [**Transaction Analysis for Cloud-Based E-Commerce System**](questions/001-transaction-unique-triplets.md) (Three Sum Problem, DifficultyLevel: Intermediate)
    - Detailed Solution: [001-Transaction-Unique-Triplets](solutions/001-transaction-unique-triplets)
+2. [**Merge Overlapping Appointments**](questions/002-merge-overlapping-appointments.md) (Merge Intervals, DifficultyLevel: Intermediate)
+   - Detailed Solution: [002-Merge-Overlapping-Appointments](solutions/002-merge-overlapping-appointments)
 
 ## Getting Started
 
