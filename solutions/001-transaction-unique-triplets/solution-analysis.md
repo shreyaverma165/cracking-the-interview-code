@@ -1,10 +1,27 @@
-## Solution Overview
+### Data Structure Brainstorm for Transaction Unique Triplets Problem
+
+| Data Structure | Pros | Cons | Expected Time Complexity | Expected Space Complexity |
+|----------------|------|------|--------------------------|---------------------------|
+| **Array** | Simple and efficient for sorting and iteration | Requires nested loops to find triplets, leading to higher time complexity | Sorting: O(n log n) Finding triplets: O(n^2) Total: O(n^2) | O(1) |
+| **Heap** | Efficient for finding minimum or maximum elements | Not suitable for finding specific combinations of triplets; higher complexity for iteration | Building heap: O(n) Extracting elements: O(n log n) Finding triplets: O(n^2) Total: O(n^2) | O(n) |
+| **Graph** | Can represent relationships between transactions | Overcomplicated for finding unique triplets; requires additional traversal logic | Building the graph: O(n^2) Traversal: O(n^3) Total: O(n^3) | O(n^2) |
+| **Tree** | Efficient for search and range queries | Overhead of maintaining tree balance; not suitable for finding specific combinations of triplets | Building tree: O(n log n) Finding triplets: O(n^2 log n) Total: O(n^2 log n) | O(n) |
+| **Dictionary (HashMap)** | Fast lookups for checking existence of elements | Does not inherently support finding specific combinations of triplets | Building map: O(n) Finding triplets: O(n^2) Total: O(n^2) | O(n) |
+| **Stack** | Useful for depth-first search and backtracking | Not suitable for finding unique combinations of triplets | Finding triplets: O(n^3) Total: O(n^3) | O(n) |
+| **Queue** | Useful for breadth-first search | Not suitable for finding unique combinations of triplets | Finding triplets: O(n^3) Total: O(n^3) | O(n) |
+| **LinkedList (or List)** | Simple and efficient for sorting and iteration | Requires nested loops to find triplets, leading to higher time complexity | Sorting: O(n log n) Finding triplets: O(n^2) Total: O(n^2) | O(1) |
+
+### Summary
+
+For the Transaction Unique Triplets problem, arrays or linked lists are the most appropriate choices due to their simplicity and efficiency in sorting and iterating through elements. Other data structures either introduce unnecessary complexity or are not well-suited for finding specific combinations of triplets.
+
+### Solution Overview
 
 1. The first step is to sort the list of transaction amounts. Sorting the transactions helps in efficiently finding the triplets that sum up to the target value. After sorting, we initialize three pointers: `i`, `left`, and `right`. The pointer `i` iterates through each transaction, while `left` starts from the next element `(i + 1)` and `right` starts from the last element in the list.
 2. For each transaction at position `i`, the algorithm calculates the sum of the transactions at pointers `i`, `left`, and `right`. If the sum equals the target value, the triplet is added to the result list. To avoid duplicates, the algorithm skips over any duplicate values by comparing the current value with the previous one. If the `sum is less than the target`, it means we need a larger sum, so we move the `left` pointer to the `right`. Conversely, if the `sum is greater than the target`, we need a smaller sum, so we move the `right` pointer to the `left`. This process continues until all possible triplets are found.
 3. To ensure that no duplicate triplets are included in the result, the algorithm skips over duplicate values for the `i`, `left`, and `right` pointers. Additionally, the results are cached using an in-memory cache mechanism. This caching improves performance for repeated queries by storing the results of previous computations and retrieving them quickly when the same query is encountered again.
 
-## Time and Space Complexity
+### Time and Space Complexity
 
 ### Time Complexity
 
@@ -39,13 +56,9 @@ The space complexity of the algorithm is primarily determined by the space requi
 
 Thus, the overall space complexity is dominated by the result storage, which is \(O(k)\). However, since \(k\) can be large, the space complexity is effectively \(O(n^2)\) in the worst case where every possible triplet is valid.
 
-## Accuracy and Efficiency
+### Accuracy and Efficiency
 
 The algorithm is highly accurate for finding all unique triplets that sum to a given target in a list of transactions. The accuracy is ensured by:
 1. Sorting the list to facilitate the two-pointer approach.
 2. Skipping duplicate elements to avoid duplicate triplets.
 3. Using a systematic search with two pointers to ensure all combinations are checked efficiently.
-
-The two-pointer technique is particularly efficient because it reduces the number of redundant checks that would otherwise occur in a naive three-loop implementation. By leveraging the sorted order, the algorithm can quickly adjust pointers based on the current sum, ensuring all possible triplets are considered without unnecessary comparisons.
-
-Overall, the `FindTransactionTriplets` function is both time and space efficient for large datasets, making it well-suited for real-time transaction analysis in a high-volume e-commerce system. The caching mechanism further enhances performance for repeated queries, making it a robust solution for practical applications in detecting unusual spending patterns or high-value transaction clusters.
