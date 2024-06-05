@@ -1,4 +1,4 @@
-### Solution Overview: Course Scheduler I, II, and III
+## Solution Overview: Course Scheduler I, II, and III
 
 ## Course Scheduler I
 
