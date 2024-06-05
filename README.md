@@ -9,7 +9,8 @@ Get ready to dive deep into the kind of questions that separate good developers 
 
 ## Questions
 
-1. [**Transaction Analysis for Cloud-Based E-Commerce System**](questions/transaction-unique-triplets.md) (Three Sum Problem, DifficultyLevel: Intermediate)
+1. [**Transaction Analysis for Cloud-Based E-Commerce System**](questions/001-transaction-unique-triplets.md) (Three Sum Problem, DifficultyLevel: Intermediate)
+   - Detailed Solution: [001-Transaction-Unique-Triplets](solutions/001-transaction-unique-triplets)
 
 ## Getting Started
 
