@@ -11,6 +11,8 @@ This repository is your ultimate resource for tackling challenging interview que
    - Detailed Solution: [001-Transaction-Unique-Triplets](solutions/001-transaction-unique-triplets)
 2. [**Merge Overlapping Appointments**](questions/002-merge-overlapping-appointments.md) (Merge Intervals, DifficultyLevel: Intermediate)
    - Detailed Solution: [002-Merge-Overlapping-Appointments](solutions/002-merge-overlapping-appointments)
+3. [**Course Scheduler**](questions/003-course-scheduler.md) (Task Scheduling, DP, DifficultyLevel: Intermediate, Hard)
+   - Detailed Solution: [003-Course-Scheduler](solutions/003-course-scheduler)
 
 ## Getting Started
 
