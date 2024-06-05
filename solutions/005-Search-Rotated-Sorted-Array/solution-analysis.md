@@ -1,6 +1,6 @@
-### Solution Analysis: Search in Rotated Sorted Array
+## Search in Rotated Sorted Array
 
-## Data Structure Brainstorm
+### Data Structure Brainstorm
 
 | Data Structure | Pros | Cons | Expected Time Complexity | Expected Space Complexity |
 |----------------|------|------|--------------------------|---------------------------|
