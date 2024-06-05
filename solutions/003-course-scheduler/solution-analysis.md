@@ -1,6 +1,23 @@
-## Solution Overview: Course Scheduler I, II, and III
+### Data Structure Brainstorm for Course Scheduler I, II, and III
 
-## Course Scheduler I
+| Data Structure | Pros | Cons | Expected Time Complexity | Expected Space Complexity |
+|----------------|------|------|--------------------------|---------------------------|
+| **Array** | Simple and straightforward | Inefficient for dynamic dependencies and topological sorting required for course scheduling | Checking dependencies: O(n^2) Topological sorting: O(V + E) Total: O(n^2) | O(n) |
+| **Heap** | Efficient for priority queue operations | Not suitable for representing and processing complex dependencies between courses | Building heap: O(n) Extracting elements: O(n log n) Processing dependencies: O(E log V) Total: O(n log n) | O(n) |
+| **Graph** | Ideal for representing course dependencies | Requires additional traversal and cycle detection logic, which can be complex | Building the graph: O(V + E) Traversal and topological sorting: O(V + E) Total: O(V + E) | O(V + E) |
+| **Tree** | Suitable for hierarchical relationships | Overhead of maintaining tree structure, unnecessary complexity for course scheduling | Building tree: O(V log V) Processing dependencies: O(V log V) Total: O(V log V) | O(V) |
+| **Dictionary (HashMap)** | Fast lookups and flexible structure | Does not inherently support ordering or cycle detection needed for course scheduling | Building map: O(V + E) Processing dependencies: O(V + E) Total: O(V + E) | O(V + E) |
+| **Stack** | Useful for depth-first traversal and cycle detection | Not ideal for representing complex dependencies; limited utility for topological sorting | Building stack: O(V + E) Processing dependencies: O(V + E) Total: O(V + E) | O(V) |
+| **Queue** | Ideal for breadth-first traversal and topological sorting | Limited utility for representing complex dependencies; requires additional logic for cycle detection | Building queue: O(V + E) Processing dependencies: O(V + E) Total: O(V + E) | O(V) |
+| **LinkedList (or List)** | Dynamic resizing and easy insertion | Inefficient for dynamic dependencies and topological sorting | Processing dependencies: O(V + E) Total: O(V + E) | O(V + E) |
+
+### Summary
+
+For Course Scheduler problems, graphs are the most appropriate data structure due to their ability to represent complex dependencies and support traversal and cycle detection algorithms. Other data structures either introduce unnecessary complexity or are not well-suited for the specific needs of course scheduling.
+
+### Solution Overview
+
+### Course Scheduler I
 
 ### Description
 
