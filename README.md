@@ -13,6 +13,8 @@ This repository is your ultimate resource for tackling challenging interview que
    - Detailed Solution: [002-Merge-Overlapping-Appointments](solutions/002-merge-overlapping-appointments)
 3. [**Course Scheduler**](questions/003-course-scheduler.md) (Task Scheduling, DP, DifficultyLevel: Intermediate, Hard)
    - Detailed Solution: [003-Course-Scheduler](solutions/003-course-scheduler)
+4. [**Sliding Window Rate Limiter**](questions/004-sliding-window-rate-limiter.md) (API Rate Limiting, DifficultyLevel: Intermediate, Hard)
+   - Detailed Solution: [004-Sliding-Window-RateLimiter](solutions/004-sliding-window-rate-limiter)
 
 ## Getting Started
 
